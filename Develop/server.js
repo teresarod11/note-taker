@@ -28,9 +28,20 @@ app.get('/api/notes', (req, res) => {
 });
 
 app.post('/api/notes', (req, res) => {
-    res.readFile('./db/db.json', (err, data) => {
-        
+    const {title, text} = req.body
+    const newNote = {
+        title,
+        text,
+    }
+    fs.readFile('./db/db.json', (err, data) => {
+    let array = JSON.parse(data)
+    array.push(newNote)
+    // console.log(newNote)    
+    fs.writeFile('./db/db.json', JSON.stringify(array, null, 2), (err) => {
+
     })
+})
+
 });
 
 app.listen(PORT, () => {
