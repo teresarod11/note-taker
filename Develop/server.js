@@ -36,11 +36,15 @@ app.post('/api/notes', (req, res) => {
     fs.readFile('./db/db.json', (err, data) => {
     let array = JSON.parse(data)
     array.push(newNote)
-    // console.log(newNote)    
     fs.writeFile('./db/db.json', JSON.stringify(array, null, 2), (err) => {
-
-    })
-})
+        if (err) {
+            throw err
+        } else {
+            res.json()
+            console.log('Note saved!')
+        }
+    });
+});
 
 });
 
