@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Test Title",
+    "text": "Test text"
+  },
+  {
+    "title": "Passwords",
+    "text": "my passwords"
+  },
+  {
+    "title": "To Do List",
+    "text": "- call mom\n- do laundry\n- do some hw"
+  },
+  {
+    "title": "Grocery List",
+    "text": "- shampoo\n- grapes\n- ketchup"
+  }
+]
