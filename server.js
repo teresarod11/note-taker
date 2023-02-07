@@ -32,6 +32,7 @@ app.post('/api/notes', (req, res) => {
     const newNote = {
         title,
         text,
+        id:uuidv4()
     }
     fs.readFile('./db/db.json', (err, data) => {
     let array = JSON.parse(data)

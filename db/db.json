@@ -1,18 +1,7 @@
 [
   {
-    "title": "Test Title",
-    "text": "Test text"
-  },
-  {
-    "title": "Passwords",
-    "text": "my passwords"
-  },
-  {
-    "title": "To Do List",
-    "text": "- call mom\n- do laundry\n- do some hw"
-  },
-  {
-    "title": "Grocery List",
-    "text": "- shampoo\n- grapes\n- ketchup"
+    "title": "Get groceries ",
+    "text": "- chips\n- milk",
+    "id": "124f8d14-8f6a-4d3c-aa3e-a0217a6e29d5"
   }
 ]
